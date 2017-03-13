@@ -13,17 +13,21 @@ Prerequisites
     
 FAQ
 ========
-    1.don't find net.sf.json-lib maven repo, so need to manually add the jar to lib
+    1.it works that set VM options: -Dspark.master=spark://localhost:7077 in UserBehaviorAnalyser Run Configurations,
+      but doesn't work set Program arguments: spark://localhost:7077 if you run UserBehaviorAnalyser in Intellij IDEA.
+      
+
+    2.don't find net.sf.json-lib maven repo, so need to manually add the jar to lib
     
     
-    2.redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+    3.redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
     Caused by: redis.clients.jedis.exceptions.JedisConnectionException: 
     java.net.ConnectException: Connection refused
     
     start redis server
     
     
-    3.DENIED Redis is running in protected mode because protected mode is enabled, 
+    4.DENIED Redis is running in protected mode because protected mode is enabled, 
     no bind address was specified, no authentication password is requested to clients. 
     In this mode connections are only accepted from the loopback interface. 
     If you want to connect from external computers to Redis you may adopt one of the following solutions: 
