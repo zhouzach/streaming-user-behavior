@@ -20,14 +20,17 @@ FAQ
     2.don't find net.sf.json-lib maven repo, so need to manually add the jar to lib
     
     
-    3.redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+    3.the results inserted into redis is stored on db index 1 in redis not default 0
+    
+    
+    4.redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
     Caused by: redis.clients.jedis.exceptions.JedisConnectionException: 
     java.net.ConnectException: Connection refused
     
     start redis server
     
     
-    4.DENIED Redis is running in protected mode because protected mode is enabled, 
+    5.DENIED Redis is running in protected mode because protected mode is enabled, 
     no bind address was specified, no authentication password is requested to clients. 
     In this mode connections are only accepted from the loopback interface. 
     If you want to connect from external computers to Redis you may adopt one of the following solutions: 
