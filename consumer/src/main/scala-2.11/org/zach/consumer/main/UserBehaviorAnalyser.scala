@@ -26,8 +26,8 @@ object UserBehaviorAnalyser {
     val ssc = new StreamingContext(conf, Seconds(5))
 
     /** the topic has to be same with the client's topic */
-    val topics = if (args.length <= 1) Set("hotSpot","test") else Set(args(1))
-    val brokers = "slave3:9092,rsm2:9092"
+    val topics = if (args.length <= 1) Set("hotSpot") else Set(args(1))
+    val brokers = "localhost:9092"
 
     val kafkaParams = Map[String, String](
       "metadata.broker.list" -> brokers

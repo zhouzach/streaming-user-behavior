@@ -42,7 +42,7 @@ object UserDataProducer {
   def main(args: Array[String]): Unit = {
     /** create brokers */
     val brokers =
-      if (args.length == 0) "slave3:9092,rsm2:9092"
+      if (args.length == 0) "localhost:9092"
       else args(0)
 
     /** set topic */

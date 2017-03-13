@@ -17,3 +17,6 @@ libraryDependencies += "org.apache.commons" % "commons-pool2" % "2.4.2"
 libraryDependencies += "redis.clients" % "jedis" % "2.9.0"
 
 libraryDependencies += "com.typesafe" % "config" % "1.3.1"
+
+// https://mvnrepository.com/artifact/net.sf.ezmorph/ezmorph
+libraryDependencies += "net.sf.ezmorph" % "ezmorph" % "1.0.4"

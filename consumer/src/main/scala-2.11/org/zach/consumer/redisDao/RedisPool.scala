@@ -64,4 +64,8 @@ object RedisPool {
     * Be sure that the JedisPool is destroyed, after the App stops
     */
   sys.addShutdownHook(hook.run)
+
+  def main(args: Array[String]): Unit = {
+    println(getResource())
+  }
 }
