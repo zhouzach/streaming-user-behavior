@@ -7,6 +7,7 @@ Analyse user behavior in Kafka and Spark Streaming
 Prerequisites
 ============
     1.spark version is 2.1.0 that requres scala version is 2.11.x
+    2.kafka version is 2.11-0.10.2.0
     
 FAQ
 ========
